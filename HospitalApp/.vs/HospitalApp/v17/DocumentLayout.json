@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "signup.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\signup.cs",
+              "RelativeDocumentMoniker": "Hospital\\signup.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\signup.cs",
+              "RelativeToolTip": "Hospital\\signup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:30:19.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "signup.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\signup.cs",
+              "RelativeDocumentMoniker": "Hospital\\signup.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\signup.cs [Design]",
+              "RelativeToolTip": "Hospital\\signup.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T14:08:35.547Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "admin.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\admin.cs",
+              "RelativeDocumentMoniker": "Hospital\\admin.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\admin.cs",
+              "RelativeToolTip": "Hospital\\admin.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwCQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T10:39:38.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "admin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\admin.cs",
+              "RelativeDocumentMoniker": "Hospital\\admin.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\admin.cs [Design]",
+              "RelativeToolTip": "Hospital\\admin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T10:39:27.233Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "login.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\login.cs",
+              "RelativeDocumentMoniker": "Hospital\\login.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\login.cs",
+              "RelativeToolTip": "Hospital\\login.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAYwDkAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T19:21:36.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Form1.cs",
+              "RelativeDocumentMoniker": "Hospital\\Form1.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Form1.cs",
+              "RelativeToolTip": "Hospital\\Form1.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAYwC0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T12:59:09.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\login.cs",
+              "RelativeDocumentMoniker": "Hospital\\login.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\login.cs [Design]",
+              "RelativeToolTip": "Hospital\\login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T19:16:36.441Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Form1.cs",
+              "RelativeDocumentMoniker": "Hospital\\Form1.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Form1.cs [Design]",
+              "RelativeToolTip": "Hospital\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T12:58:59.852Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
