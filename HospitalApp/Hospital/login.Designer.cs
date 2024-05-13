@@ -35,6 +35,8 @@
             textBoxPass = new TextBox();
             passLabel = new Label();
             button1 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -53,7 +55,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Baskerville Old Face", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.RoyalBlue;
-            label2.Location = new Point(339, 123);
+            label2.Location = new Point(388, 151);
             label2.Name = "label2";
             label2.Size = new Size(88, 34);
             label2.TabIndex = 2;
@@ -104,6 +106,16 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Red_Simple_Medical_Health_Logo;
+            pictureBox1.Location = new Point(215, -76);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(421, 375);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
             // login
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -116,10 +128,12 @@
             Controls.Add(textBoxEmail);
             Controls.Add(emailLabel);
             Controls.Add(label2);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Name = "login";
             Text = "login";
             Load += login_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -133,5 +147,6 @@
         private TextBox textBoxPass;
         private Label passLabel;
         private Button button1;
+        private PictureBox pictureBox1;
     }
 }

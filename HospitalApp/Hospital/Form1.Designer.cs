@@ -33,6 +33,8 @@
             open = new Button();
             label3 = new Label();
             linkLabel1 = new LinkLabel();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -40,7 +42,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Baskerville Old Face", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Crimson;
-            label1.Location = new Point(216, 30);
+            label1.Location = new Point(243, 51);
             label1.Name = "label1";
             label1.Size = new Size(379, 69);
             label1.TabIndex = 0;
@@ -53,7 +55,7 @@
             label2.BackColor = Color.AliceBlue;
             label2.Font = new Font("Baskerville Old Face", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.RoyalBlue;
-            label2.Location = new Point(338, 129);
+            label2.Location = new Point(369, 134);
             label2.Name = "label2";
             label2.Size = new Size(141, 34);
             label2.TabIndex = 1;
@@ -95,6 +97,16 @@
             linkLabel1.Text = "Signup";
             linkLabel1.LinkClicked += linkLabel1_LinkClicked;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.Red_Simple_Medical_Health_Logo;
+            pictureBox1.Location = new Point(201, -92);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(421, 375);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -105,10 +117,13 @@
             Controls.Add(label3);
             Controls.Add(open);
             Controls.Add(label2);
+            Controls.Add(pictureBox1);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Form1";
             Text = "Heal Hospital";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -120,5 +135,6 @@
         private Button open;
         private Label label3;
         private LinkLabel linkLabel1;
+        private PictureBox pictureBox1;
     }
 }
