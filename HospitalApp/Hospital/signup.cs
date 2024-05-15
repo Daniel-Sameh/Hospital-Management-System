@@ -123,7 +123,7 @@ namespace Hospital
             var speciality= specialitytextBox.Text;
             if (comboBox1.SelectedIndex == 0)
             {
-                if (id == 0 || string.IsNullOrWhiteSpace(firstname) || string.IsNullOrWhiteSpace(gender) || phone == 0 || birthday == DateTime.MinValue || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
+                if (id == 0 || string.IsNullOrWhiteSpace(firstname) || string.IsNullOrWhiteSpace(gender) || phone == 0 || birthday == DateTime.Today || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
                 {
                     MessageBox.Show("Please fill in all the required fields.");
                     return;

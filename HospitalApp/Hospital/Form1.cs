@@ -35,7 +35,7 @@ namespace Hospital
             this.Hide();
             login loginForm = new();
             loginForm.ShowDialog();
-            this.Close();
+            this.Show();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -43,7 +43,7 @@ namespace Hospital
             this.Hide();
             signup signForm = new signup();
             signForm.ShowDialog();
-            this.Close();
+            this.Show();
         }
     }
 }

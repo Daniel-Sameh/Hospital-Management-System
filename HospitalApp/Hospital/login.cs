@@ -21,6 +21,18 @@ namespace Hospital
             connectString = "Data Source =DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=true";
             con = new SqlConnection(connectString);
             con.Open();
+            this.KeyPreview = true;
+
+            // Subscribe to the KeyDown event
+            this.KeyDown += key_down_fun;
+            textBoxPass.UseSystemPasswordChar = true;
+        }
+        private void key_down_fun(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_Click(sender, e);
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -53,25 +65,32 @@ namespace Hospital
                 }
                 rdr1.Close();
                 query = $"select * from doctor where eId={id}";
-                SqlDataReader rdr2= cmd1.ExecuteReader();
+                SqlCommand cmd2= new SqlCommand(query, con);
+                SqlDataReader rdr2= cmd2.ExecuteReader();
                 if (rdr2.Read())
                 {
+                    Doctorview d= new Doctorview(id, fName, lName,gender, phone, email, password, salary,rdr2.GetString(1));
+                    this.Hide();
+                    d.ShowDialog();
                     this.Close();
                     return ;
                 }
                 rdr2.Close();
-                query = $"select * from doctor where eId={id}";
-                SqlDataReader rdr3 = cmd1.ExecuteReader();
+                query = $"select * from Nurse where eId={id}";
+                SqlCommand cmd3= new SqlCommand(query, con);
+                SqlDataReader rdr3 = cmd3.ExecuteReader();
                 if (rdr3.Read())
                 {
                     this.Close();
                     return ;
                 }
 
-                MessageBox.Show("Invalid Email or Password!");
+                
 
             }
             else{
+                rdr.Close();
+                MessageBox.Show("Invalid Email or Password!");
                 query = $"select * from patient where pEmail={textBoxEmail.Text}";//Complete this shit
             }
         }

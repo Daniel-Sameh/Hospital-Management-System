@@ -109,5 +109,15 @@ namespace Hospital.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Red_Simple_Medical_Health_Logo__2_ {
+            get {
+                object obj = ResourceManager.GetObject("Red Simple Medical Health Logo (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
