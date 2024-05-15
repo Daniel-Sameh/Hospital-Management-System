@@ -46,8 +46,29 @@ namespace Hospital
                 if (rdr1.Read())
                 {
                     admin a = new admin(id, fName, lName, gender, phone, email, password, salary);
-                    a.Show();
+                    this.Hide();
+                    a.ShowDialog();
+                    this.Close();
+                    return;
                 }
+                rdr1.Close();
+                query = $"select * from doctor where eId={id}";
+                SqlDataReader rdr2= cmd1.ExecuteReader();
+                if (rdr2.Read())
+                {
+                    this.Close();
+                    return ;
+                }
+                rdr2.Close();
+                query = $"select * from doctor where eId={id}";
+                SqlDataReader rdr3 = cmd1.ExecuteReader();
+                if (rdr3.Read())
+                {
+                    this.Close();
+                    return ;
+                }
+
+                MessageBox.Show("Invalid Email or Password!");
 
             }
             else{

@@ -152,7 +152,7 @@ namespace Hospital
             ///////////////////////////////////////////////////////////////
             SqlCommand sqlCommand;
             if(comboBox1.SelectedIndex == 0) {
-                query = $"insert into Patient(pId, firstName, lastName, birthDate, pGender, pPhone, pEmail, pPassword) values({id},{firstname},{lastname},{birthday},{gender},{phone},{email},{password})";
+                query = $"insert into Patient(pId, firstName, lastName, birthDate, pGender, pPhone, pEmail, pPassword) values({id},'{firstname}','{lastname}','{birthday}','{gender}',{phone},'{email}','{password}')";
                 sqlCommand= new SqlCommand(query,con);
                 int rowsAffected=0;
                 try
@@ -176,22 +176,57 @@ namespace Hospital
                 }
                 return;
             }else{
-                query = $"insert into Employee(eId, empFirstName, empLastName,empGender,empPhone, empEmail, empPassword,salary) values({id},{firstname},{lastname},{gender},{phone},{email},{password},{salary})";
+                query = $"insert into Employee(eId, empFirstName, empLastName,empGender,empPhone, empEmail, empPassword,salary) values({id},'{firstname}','{lastname}','{gender}',{phone},'{email}','{password}',{salary})";
                 sqlCommand= new SqlCommand(query,con);
-                sqlCommand.ExecuteReader();
+                int ra=sqlCommand.ExecuteNonQuery();
+                if (ra == 0){
+                    MessageBox.Show("Failed to add user.");
+                }
+                
             }
             if(comboBox1.SelectedIndex == 1) {
                 query = $"insert into Admin values({id})";
                 SqlCommand s= new SqlCommand(query,con);
-                s.ExecuteReader();
-            }else if(comboBox1.SelectedIndex==2){
-                query = $"insert into Doctor values({id},{speciality})";
+                int ra=s.ExecuteNonQuery();
+                if (ra > 0)
+                {
+                    MessageBox.Show("Admin added successfully.");
+                    this.Hide();
+                    admin a= new admin(id,firstname,lastname,gender, phone,email,password,(int)salary);
+                    a.ShowDialog();
+                    con.Close();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add admin.");
+                }
+
+            }
+            else if(comboBox1.SelectedIndex==2){
+                query = $"insert into Doctor values({id},'{speciality}')";
                 SqlCommand s = new SqlCommand(query, con);
-                s.ExecuteReader();
-            }else{
+                int ra = s.ExecuteNonQuery();
+                if (ra > 0)
+                {
+                    MessageBox.Show($"Doctor/{firstname} added successfully.");
+                }
+                else{
+                    MessageBox.Show("Failed to add doctor.");
+                }
+            }
+            else{
                 query = $"insert into Nurse values({id},{workingHrs})";
                 SqlCommand s = new SqlCommand(query, con);
-                s.ExecuteReader();
+                int ra= s.ExecuteNonQuery();
+                if (ra > 0)
+                {
+                    MessageBox.Show($"Nurse {firstname} added successfully.");
+                }
+                else
+                {
+                    MessageBox.Show("Failed to add nurse.");
+                }
             }
 
 

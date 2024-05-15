@@ -22,9 +22,9 @@ namespace Hospital
         private string password;
         private int salary;
 
-        public admin(decimal id, string fName, string lName,string gender,decimal phone,string email,string password,int salary)
+        public admin(decimal id, string fName, string lName, string gender, decimal phone, string email, string password, int salary)
         {
-            
+
             InitializeComponent();
             adminName.Text = fName + " " + lName;
             this.id = id;
@@ -35,10 +35,15 @@ namespace Hospital
             this.email = email;
             this.password = password;
             this.salary = salary;
-           
+
         }
 
         private void admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
