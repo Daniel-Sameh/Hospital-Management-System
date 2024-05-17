@@ -69,6 +69,7 @@ namespace Hospital
                 SqlDataReader rdr2= cmd2.ExecuteReader();
                 if (rdr2.Read())
                 {
+                    //MessageBox.Show("I am in doctor");
                     Doctorview d= new Doctorview(id, fName, lName,gender, phone, email, password, salary,rdr2.GetString(1));
                     this.Hide();
                     d.ShowDialog();
@@ -90,8 +91,35 @@ namespace Hospital
             }
             else{
                 rdr.Close();
-                MessageBox.Show("Invalid Email or Password!");
-                query = $"select * from patient where pEmail={textBoxEmail.Text}";//Complete this shit
+                query = $"select * from Patient where pEmail='{textBoxEmail.Text}' and pPassword='{textBoxPass.Text}'";
+                SqlCommand cmd9 = new SqlCommand(query, con);
+                SqlDataReader rdr5 = cmd9.ExecuteReader();
+                if (rdr5.Read())
+                {
+                    var id = rdr5.GetDecimal(0);
+                    var empid = rdr5.GetDecimal(1);
+                    var fName = rdr5.GetString(2);
+                    var lName = rdr5.GetString(3);
+                    var DOB = rdr5.GetDateTime(4);
+                    var gender = rdr5.GetString(5);
+                    var phone = rdr5.GetDecimal(6);
+                    var email = rdr5.GetString(7);
+                    var password = rdr5.GetString(8);
+
+                    MessageBox.Show($"Welcome {rdr5.GetValue(2)} {rdr5.GetValue(3)}");
+                    //Patient p = new Patient(id, empid, fName, lName, DOB, gender, phone, email, password);
+                    this.Hide();
+                    //p.ShowDialog();
+                    //this.Close();
+                    rdr5.Close();
+                    return;
+                }
+                else
+                {
+                    MessageBox.Show("Invalid Email or Password!");
+
+                }
+
             }
         }
 

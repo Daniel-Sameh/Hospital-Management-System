@@ -71,3 +71,6 @@ C:\Users\Daniel Sameh\source\repos\HospitalApp\Hospital\obj\Debug\net8.0-windows
 C:\Users\Daniel Sameh\source\repos\HospitalApp\Hospital\obj\Debug\net8.0-windows\Hospital.signup.resources
 C:\Users\Daniel Sameh\source\repos\HospitalApp\Hospital\obj\Debug\net8.0-windows\Hospital.Doctorview.resources
 C:\Users\Daniel Sameh\source\repos\HospitalApp\Hospital\obj\Debug\net8.0-windows\Hospital.appointmentForm.resources
+C:\Users\Daniel Sameh\source\repos\HospitalApp\Hospital\obj\Debug\net8.0-windows\Hospital.report.resources
+C:\Users\Daniel Sameh\source\repos\HospitalApp\Hospital\obj\Debug\net8.0-windows\Hospital.ListItem.resources
+C:\Users\Daniel Sameh\source\repos\HospitalApp\Hospital\obj\Debug\net8.0-windows\Hospital.medicalHistory.resources

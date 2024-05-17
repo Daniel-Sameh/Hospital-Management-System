@@ -34,6 +34,7 @@
             label3 = new Label();
             linkLabel1 = new LinkLabel();
             pictureBox1 = new PictureBox();
+            reportlinkLabel = new LinkLabel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -107,12 +108,26 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
+            // reportlinkLabel
+            // 
+            reportlinkLabel.AutoSize = true;
+            reportlinkLabel.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            reportlinkLabel.LinkColor = Color.RoyalBlue;
+            reportlinkLabel.Location = new Point(12, 418);
+            reportlinkLabel.Name = "reportlinkLabel";
+            reportlinkLabel.Size = new Size(137, 23);
+            reportlinkLabel.TabIndex = 6;
+            reportlinkLabel.TabStop = true;
+            reportlinkLabel.Text = "Generate Report";
+            reportlinkLabel.LinkClicked += reportlinkLabel_LinkClicked;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
             ClientSize = new Size(800, 450);
+            Controls.Add(reportlinkLabel);
             Controls.Add(linkLabel1);
             Controls.Add(label3);
             Controls.Add(open);
@@ -136,5 +151,6 @@
         private Label label3;
         private LinkLabel linkLabel1;
         private PictureBox pictureBox1;
+        private LinkLabel reportlinkLabel;
     }
 }

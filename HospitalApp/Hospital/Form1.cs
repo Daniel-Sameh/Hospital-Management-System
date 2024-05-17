@@ -10,7 +10,7 @@ namespace Hospital
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -44,6 +44,12 @@ namespace Hospital
             signup signForm = new signup();
             signForm.ShowDialog();
             this.Show();
+        }
+
+        private void reportlinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            report r= new report();
+            r.Show();
         }
     }
 }
