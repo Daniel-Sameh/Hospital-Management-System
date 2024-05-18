@@ -39,9 +39,12 @@
             dataGridView1 = new DataGridView();
             label7 = new Label();
             dataGridViewSpeciality = new DataGridView();
+            label8 = new Label();
+            dataGridView2 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSpeciality).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -108,7 +111,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold);
-            label6.Location = new Point(140, 520);
+            label6.Location = new Point(140, 509);
             label6.Name = "label6";
             label6.Size = new Size(291, 27);
             label6.TabIndex = 6;
@@ -125,7 +128,7 @@
             dataGridView1.BackgroundColor = Color.LightSteelBlue;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.EnableHeadersVisualStyles = false;
-            dataGridView1.Location = new Point(12, 550);
+            dataGridView1.Location = new Point(22, 549);
             dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
@@ -133,7 +136,7 @@
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.RowTemplate.ReadOnly = true;
-            dataGridView1.Size = new Size(556, 232);
+            dataGridView1.Size = new Size(556, 219);
             dataGridView1.TabIndex = 7;
             // 
             // label7
@@ -160,7 +163,7 @@
             dataGridViewSpeciality.EnableHeadersVisualStyles = false;
             dataGridViewSpeciality.GridColor = SystemColors.HotTrack;
             dataGridViewSpeciality.ImeMode = ImeMode.NoControl;
-            dataGridViewSpeciality.Location = new Point(12, 303);
+            dataGridViewSpeciality.Location = new Point(22, 303);
             dataGridViewSpeciality.MultiSelect = false;
             dataGridViewSpeciality.Name = "dataGridViewSpeciality";
             dataGridViewSpeciality.ReadOnly = true;
@@ -182,8 +185,40 @@
             dataGridViewSpeciality.ShowCellToolTips = false;
             dataGridViewSpeciality.ShowEditingIcon = false;
             dataGridViewSpeciality.ShowRowErrors = false;
-            dataGridViewSpeciality.Size = new Size(556, 194);
+            dataGridViewSpeciality.Size = new Size(556, 174);
             dataGridViewSpeciality.TabIndex = 9;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold);
+            label8.Location = new Point(140, 814);
+            label8.Name = "label8";
+            label8.Size = new Size(300, 27);
+            label8.TabIndex = 10;
+            label8.Text = "Top 5 Customers(Patients)";
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.AllowUserToAddRows = false;
+            dataGridView2.AllowUserToDeleteRows = false;
+            dataGridView2.AllowUserToResizeColumns = false;
+            dataGridView2.AllowUserToResizeRows = false;
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView2.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView2.BackgroundColor = Color.LightSteelBlue;
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.EnableHeadersVisualStyles = false;
+            dataGridView2.Location = new Point(22, 855);
+            dataGridView2.MultiSelect = false;
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.ReadOnly = true;
+            dataGridView2.RowHeadersVisible = false;
+            dataGridView2.RowHeadersWidth = 51;
+            dataGridView2.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView2.RowTemplate.ReadOnly = true;
+            dataGridView2.Size = new Size(556, 219);
+            dataGridView2.TabIndex = 11;
             // 
             // report
             // 
@@ -191,7 +226,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.AliceBlue;
-            ClientSize = new Size(590, 553);
+            ClientSize = new Size(590, 502);
+            Controls.Add(dataGridView2);
+            Controls.Add(label8);
             Controls.Add(dataGridViewSpeciality);
             Controls.Add(label7);
             Controls.Add(dataGridView1);
@@ -208,6 +245,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewSpeciality).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -224,5 +262,7 @@
         private DataGridView dataGridView1;
         private Label label7;
         private DataGridView dataGridViewSpeciality;
+        private Label label8;
+        private DataGridView dataGridView2;
     }
 }

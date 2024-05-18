@@ -62,7 +62,7 @@
             // 
             Patient_name.AutoSize = true;
             Patient_name.Font = new Font("Century Gothic", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            Patient_name.Location = new Point(513, 49);
+            Patient_name.Location = new Point(508, 45);
             Patient_name.Name = "Patient_name";
             Patient_name.Size = new Size(112, 34);
             Patient_name.TabIndex = 1;

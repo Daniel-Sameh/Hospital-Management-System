@@ -28,6 +28,7 @@ namespace Hospital
             con.Open();
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataReader rdr = cmd.ExecuteReader();
+            //int appIncome=rdr.GetInt32(0);
             if (rdr.Read())
             {
                 label2.Text += rdr.GetInt32(0).ToString()+" EGP.";
@@ -50,6 +51,7 @@ namespace Hospital
             }
             rdr2.Close();
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            //Top 10 & Group by:
             query = "select top 10 e.empFirstName+' '+e.empLastName as name, d.speciality, e.salary, e.empPhone as phone from doctor as d join Employee as e on d.eId=e.eId order by e.salary;";
             SqlCommand cmd3 = new SqlCommand(query, con);
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
@@ -65,6 +67,8 @@ namespace Hospital
             {
                 row.Height = 135;
             }*/
+
+            //Group by:
             query = "select Speciality, count(*) as [Number of Appointments] from doctor as d join appointment as a on d.eId=a.eId group by speciality order by count(*) desc;";
             SqlConnection con1 = new SqlConnection(connection);
             SqlCommand cmd4= new SqlCommand(query,con1);
@@ -79,7 +83,17 @@ namespace Hospital
             {
                 row.DividerHeight= 10;
             }*/
-
+            //Top 5 & Group by:
+            query = "select top 5 p.firstName+' '+p.lastName as Name, count(*) as Appointments from patient as p join Appointment as a on p.pId=a.pId group by p.firstName+' '+p.lastName;";
+            SqlConnection conn1 = new SqlConnection(connection);
+            SqlCommand cmd5 = new SqlCommand(query,conn1);
+            SqlDataAdapter adapter2 = new SqlDataAdapter(query, connection);
+            DataTable dataTable2 = new DataTable();
+            adapter2.Fill(dataTable2);
+            dataGridView2.DataSource = dataTable2;
+            dataGridView2.AutoResizeColumns();
+            dataGridView2.AutoResizeRows();
+            dataGridView2.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
         }
     }

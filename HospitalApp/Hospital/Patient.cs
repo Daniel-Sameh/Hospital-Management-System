@@ -31,12 +31,13 @@ namespace Hospital
             this.employee_id = empid;
             InitializeComponent();
             Patient_name.Text = patient_name;
-            phone_number.Text = patient_phone.ToString();
+            phone_number.Text = "0"+patient_phone.ToString();
             Patient_email.Text = email;
             Admin_ID.Text = employee_id.ToString();
             bok = false;
             calcBill();
-           
+            DataGrid.CellClick += new DataGridViewCellEventHandler(this.DataGrid_CellClick);
+
         }
         private void calcBill()
         {
@@ -61,7 +62,7 @@ namespace Hospital
             {
                 pres_sum.Text = "0";
             }
-            //con.Close();
+            con.Close();
         }
 
         private void Patient_Load(object sender, EventArgs e)
@@ -123,10 +124,11 @@ namespace Hospital
                 DataGrid.Columns.Insert(0, deleteButtonColumn);
                 bok = true;
             }
-            
+           
 
             DataGrid.DataSource = dt;
-            DataGrid.CellClick += DataGrid_CellClick;
+           // DataGrid.CellClick += DataGrid_CellClick;
+            //DataGrid.CellClick += new DataGridViewCellEventHandler(this.DataGrid_CellClick);
             DataGrid.AutoResizeColumns();
             DataGrid.AutoResizeRows();
             DataGrid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
@@ -162,7 +164,8 @@ namespace Hospital
                 DataGrid.Columns.Insert(0, deleteButtonColumn);
                 bok = true;
             }
-            DataGrid.CellClick += DataGrid_CellClick;
+           // DataGrid.CellClick += DataGrid_CellClick;
+            //DataGrid.CellClick += new DataGridViewCellEventHandler(this.DataGrid_CellClick);
             calcBill();
         }
 
@@ -172,7 +175,7 @@ namespace Hospital
             MHF.Show();
 
         }
-        private void DataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
+        /*private void DataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == DataGrid.Columns["delete"].Index && e.RowIndex >= 0)
             {
@@ -180,8 +183,8 @@ namespace Hospital
                 DataRow selectedRow = ((DataRowView)DataGrid.Rows[e.RowIndex].DataBoundItem).Row;
                 if (selectedRow.Table.Columns.Contains("Medicine"))
                 {
-                    int id= Convert.ToInt32(selectedRow["ID"]);
-                    string query = $"delete from Prescription where presId={id}";
+                    int presid= Convert.ToInt32(selectedRow["ID"]);
+                    string query = $"delete from Prescription where presId={presid}";
                     SqlConnection con = new SqlConnection("Data Source=DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=True;TrustServerCertificate=True");
                     con.Open();
                     SqlCommand cmd = new SqlCommand(query, con);
@@ -195,7 +198,7 @@ namespace Hospital
                     }*/
 
 
-                }
+        /*        }
                 else
                 {
                     int id = Convert.ToInt32(selectedRow["ID"]);
@@ -209,6 +212,46 @@ namespace Hospital
                     calcBill();
                 }
                 
+            }
+        }      */
+
+        private void DataGrid_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 0 && e.RowIndex >= 0)
+            {
+                // Retrieve the data for the selected row
+                DataRow selectedRow = ((DataRowView)DataGrid.Rows[e.RowIndex].DataBoundItem).Row;
+                if (selectedRow.Table.Columns.Contains("Medicine"))
+                {
+                    int id = Convert.ToInt32(selectedRow["ID"]);
+                    string query = $"delete from Prescription where presId={DataGrid.Rows[e.RowIndex].Cells[1].Value}";
+                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=True;TrustServerCertificate=True");
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    int r = cmd.ExecuteNonQuery();
+                    MessageBox.Show("the Prescreption is deleted.", "Prescription Notification");
+                    View_Prescriptions_Click(sender, e);
+                    calcBill();
+                    /*if (r > 0)
+                    {
+                        MessageBox.Show("");
+                    }*/
+
+
+                }
+                else
+                {
+                    int id = Convert.ToInt32(selectedRow["ID"]);
+                    string query = $"delete from Appointment where aId={DataGrid.Rows[e.RowIndex].Cells[1].Value}";
+                    SqlConnection con = new SqlConnection("Data Source=DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=True;TrustServerCertificate=True");
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    int r = cmd.ExecuteNonQuery();
+                    MessageBox.Show("the Appointment is deleted.", "Appointment Notification");
+                    view_appoint_Click(sender, e);
+                    calcBill();
+                }
+
             }
         }
     }

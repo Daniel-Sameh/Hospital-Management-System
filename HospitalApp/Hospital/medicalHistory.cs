@@ -23,7 +23,8 @@ namespace Hospital
             if(!isPatient ) { 
                 dataGridView1.Enabled = false;
             }
-            bok= false; 
+            bok= false;
+            dataGridView1.CellClick += new DataGridViewCellEventHandler(this.DataGridView1_CellClick);
         }
 
         private void medicalHistory_Load(object sender, EventArgs e)
@@ -39,9 +40,16 @@ namespace Hospital
                     appointmentButton.Name = "delete";
                     appointmentButton.Text = "delete";
                     appointmentButton.UseColumnTextForButtonValue = true;
-                    dataGridView1.Columns.Add(appointmentButton);
-                    dataGridView1.CellClick += DataGridView1_CellClick;
-                    bok= true;
+                    dataGridView1.Columns.Insert(0,appointmentButton);
+                    //dataGridView1.CellClick += DataGridView1_CellClick;
+
+                    DataGridViewButtonColumn appointmentButton1 = new DataGridViewButtonColumn();
+                    appointmentButton1.Name = "update";
+                    appointmentButton1.Text = "update";
+                    appointmentButton1.UseColumnTextForButtonValue = true;
+                    dataGridView1.Columns.Insert(1,appointmentButton1);
+                    
+                    bok = true;
                 }
                 
                 SqlDataAdapter adapter = new SqlDataAdapter(query, con);
@@ -77,9 +85,20 @@ namespace Hospital
                 SqlCommand cmd = new SqlCommand(query, con);
                 int r = cmd.ExecuteNonQuery();
                 MessageBox.Show("the Record is deleted.", "Notification");
-                medicalHistory_Load(sender, e);
+                //medicalHistory_Load(sender, e);
+
+            }else if(e.ColumnIndex == dataGridView1.Columns["update"].Index && e.RowIndex >= 0)
+            {
+                DataRow selectedRow = ((DataRowView)dataGridView1.Rows[e.RowIndex].DataBoundItem).Row;
+                int id = Convert.ToInt32(selectedRow["ID"]);
+                DateTime d = (DateTime)selectedRow["Date"];
+                MedicalHistoryForm m = new MedicalHistoryForm(pId, selectedRow["recordDetails"].ToString(),d,id);
+                m.Show();
+
+               
 
             }
+            medicalHistory_Load(sender, e);
         }
     }
 }

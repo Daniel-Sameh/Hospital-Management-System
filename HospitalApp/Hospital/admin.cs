@@ -25,6 +25,8 @@ namespace Hospital
         private string password;
         private int salary;
         private bool bOk;
+        private bool update;
+        private bool bUp;
 
         public admin(decimal id, string fName, string lName, string gender, decimal phone, string email, string password, int salary)
         {
@@ -41,7 +43,9 @@ namespace Hospital
             this.salary = salary;
 
             this.bOk = false;
-
+            this.update = false;
+            this.bUp= false;
+            dataGridView1.CellClick += new DataGridViewCellEventHandler(this.DataGridView1_CellClick);
         }
 
         private void admin_Load(object sender, EventArgs e)
@@ -62,6 +66,48 @@ namespace Hospital
                 //Appointment To be implemented
                 appointmentForm a= new appointmentForm(patientID,name);
                 a.ShowDialog();
+            }else if(e.ColumnIndex == dataGridView1.Columns["Update"].Index && e.RowIndex >= 0)
+            {
+                DataRow selectedRow = ((DataRowView)dataGridView1.Rows[e.RowIndex].DataBoundItem).Row;
+                int patientID = Convert.ToInt32(selectedRow["pId"]);
+                string query = $"select * from patient where pId={patientID};";
+                string connectionString = "Data Source =DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=true";
+                SqlConnection con = new SqlConnection(connectionString);
+                con.Open();
+                SqlCommand cmd = new SqlCommand(query, con);
+                SqlDataReader rdr = cmd.ExecuteReader();
+                if (rdr.Read())
+                {
+                    firstnametextBox.Text = rdr.GetString(2);
+                    lastnametextBox.Text = rdr.GetString(3);
+                    textBoxEmail.Text = rdr.GetString(7);
+                    textBoxPass.Text = rdr.GetString(8);
+                    //gendercomboBox.Text =
+                    numericUpDownPhone.Value = rdr.GetDecimal(6);
+                    string g = rdr.GetString(5);
+                    if (g == "Male")
+                    {
+                        gendercomboBox.SelectedIndex = 0;
+                    }
+                    else
+                    {
+                        gendercomboBox.SelectedIndex = 1;
+                    }
+                }
+                rdr.Close();
+                numericUpDown2.Value = patientID;
+                elapsePanel();
+                update = true;
+                gendercomboBox.Enabled = false;
+                firstnametextBox.ReadOnly = true;
+                lastnametextBox.ReadOnly = true;
+                firstnametextBox.Enabled = false;
+                lastnametextBox.Enabled = false;
+                numericUpDown2.Enabled=false;
+
+
+
+
             }
         }
 
@@ -101,7 +147,11 @@ namespace Hospital
                 appointmentButton.UseColumnTextForButtonValue = true;
                 dataGridView1.Columns.Add(appointmentButton);
                 bOk = true;
-                dataGridView1.CellClick += DataGridView1_CellClick;
+                //dataGridView1.CellClick += DataGridView1_CellClick;
+            }
+            if(bUp) {
+                dataGridView1.Columns.Remove("Update");
+                bUp = false;
             }
 
             string connectionString = "Data Source =DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=true";
@@ -142,8 +192,20 @@ namespace Hospital
                 appointmentButton.Text = "Add Appointment";
                 appointmentButton.UseColumnTextForButtonValue = true;
                 dataGridView1.Columns.Add(appointmentButton);
+
+               
                 bOk = true;
-                dataGridView1.CellClick += DataGridView1_CellClick;
+                //dataGridView1.CellClick += DataGridView1_CellClick;
+            }
+
+            if(!bUp)
+            {
+                DataGridViewButtonColumn appointmentButton1 = new DataGridViewButtonColumn();
+                appointmentButton1.Name = "Update";
+                appointmentButton1.Text = "Update";
+                appointmentButton1.UseColumnTextForButtonValue = true;
+                dataGridView1.Columns.Insert(1,appointmentButton1);
+                bUp = true;
             }
 
             string connectionString = "Data Source =DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=true";
@@ -211,6 +273,34 @@ namespace Hospital
             string connectString = "Data Source =DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=true";
             SqlConnection con = new SqlConnection(connectString);
             con.Open();
+            if (update)
+            {
+                //UPDATE QUERY:
+                string query1 = $"update patient set birthDate='{pBirthday}',pPhone={pPhone}, pEmail= '{pEmail}', pPassword='{pPassword}' where pId={pId};";
+                SqlCommand cmd3 = new SqlCommand(query1, con);
+                int r = cmd3.ExecuteNonQuery();
+                if (r>0)
+                {
+                    MessageBox.Show("Patient Updated Successfully!", "Notification");
+                }
+                update = false;
+                gendercomboBox.Enabled = true;
+                firstnametextBox.ReadOnly = false;
+                lastnametextBox.ReadOnly = false;
+                firstnametextBox.Enabled = true;
+                lastnametextBox.Enabled = true;
+                numericUpDown2.Enabled = true;
+                gendercomboBox.SelectedIndex = -1;
+                firstnametextBox.Text = string.Empty;
+                lastnametextBox.Text = string.Empty;
+                textBoxEmail.Text = string.Empty;
+                textBoxPass.Text = string.Empty;
+                gendercomboBox.SelectedIndex = 0;
+                numericUpDownPhone.Value = 0;
+                numericUpDown2.Value = 0;
+                elapsePanel();
+                return;
+            }
             string query= $"select * from Patient where pId={pId}";
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataReader rdr = cmd.ExecuteReader();
