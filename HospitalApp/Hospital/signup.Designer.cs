@@ -97,13 +97,15 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.MediumBlue;
             button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Transparent;
             button1.Location = new Point(414, 477);
             button1.Name = "button1";
             button1.Size = new Size(137, 48);
             button1.TabIndex = 12;
             button1.Text = "Submit";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // textBoxPass
@@ -238,7 +240,7 @@
             alertlabel.AutoSize = true;
             alertlabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             alertlabel.ForeColor = Color.Red;
-            alertlabel.Location = new Point(123, 186);
+            alertlabel.Location = new Point(130, 189);
             alertlabel.Name = "alertlabel";
             alertlabel.Size = new Size(16, 20);
             alertlabel.TabIndex = 24;
@@ -249,7 +251,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Red;
-            label3.Location = new Point(529, 195);
+            label3.Location = new Point(529, 197);
             label3.Name = "label3";
             label3.Size = new Size(16, 20);
             label3.TabIndex = 25;
@@ -260,7 +262,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = Color.Red;
-            label5.Location = new Point(571, 229);
+            label5.Location = new Point(573, 235);
             label5.Name = "label5";
             label5.Size = new Size(16, 20);
             label5.TabIndex = 26;
@@ -271,7 +273,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Red;
-            label6.Location = new Point(102, 284);
+            label6.Location = new Point(100, 285);
             label6.Name = "label6";
             label6.Size = new Size(16, 20);
             label6.TabIndex = 27;
@@ -282,7 +284,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = Color.Red;
-            label7.Location = new Point(91, 330);
+            label7.Location = new Point(89, 330);
             label7.Name = "label7";
             label7.Size = new Size(16, 20);
             label7.TabIndex = 28;
@@ -293,7 +295,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label8.ForeColor = Color.Red;
-            label8.Location = new Point(123, 382);
+            label8.Location = new Point(123, 387);
             label8.Name = "label8";
             label8.Size = new Size(16, 20);
             label8.TabIndex = 31;
@@ -329,7 +331,7 @@
             label10.AutoSize = true;
             label10.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label10.ForeColor = Color.Red;
-            label10.Location = new Point(542, 284);
+            label10.Location = new Point(545, 284);
             label10.Name = "label10";
             label10.Size = new Size(16, 20);
             label10.TabIndex = 35;
@@ -373,7 +375,7 @@
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.Red;
-            label12.Location = new Point(573, 330);
+            label12.Location = new Point(571, 330);
             label12.Name = "label12";
             label12.Size = new Size(16, 20);
             label12.TabIndex = 40;
@@ -430,7 +432,6 @@
             ClientSize = new Size(1065, 584);
             Controls.Add(numericUpDownPhone);
             Controls.Add(numericUpDown3);
-            Controls.Add(label13);
             Controls.Add(label12);
             Controls.Add(specialitytextBox);
             Controls.Add(specialitylabel);
@@ -464,6 +465,7 @@
             Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(label1);
+            Controls.Add(label13);
             Name = "signup";
             Text = "signup";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

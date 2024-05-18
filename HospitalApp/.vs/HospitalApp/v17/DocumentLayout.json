@@ -3,48 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\doctorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\doctorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\medicalhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\medicalhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\medicalhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\medicalhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\medicalhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\listitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\listitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\doctorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\doctorview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\listitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\listitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\doctorview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\doctorview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\medicalhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\medicalhistoryform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|c:\\users\\daniel sameh\\source\\repos\\hospitalapp\\hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\hospital\\doctorview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CA972B1-9ECD-4DD2-A442-42287E77EB5B}|Hospital\\Hospital.csproj|solutionrelative:hospital\\doctorview.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,8 +54,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListItem.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\ListItem.cs",
+              "RelativeDocumentMoniker": "Hospital\\ListItem.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\ListItem.cs [Design]",
+              "RelativeToolTip": "Hospital\\ListItem.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T16:59:38.427Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Patient.cs",
+              "RelativeDocumentMoniker": "Hospital\\Patient.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Patient.cs",
+              "RelativeToolTip": "Hospital\\Patient.cs",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAcwLMAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T16:39:45.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Patient.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Patient.cs",
+              "RelativeDocumentMoniker": "Hospital\\Patient.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Patient.cs [Design]",
+              "RelativeToolTip": "Hospital\\Patient.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T16:39:43.851Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListItem.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\ListItem.cs",
+              "RelativeDocumentMoniker": "Hospital\\ListItem.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\ListItem.cs",
+              "RelativeToolTip": "Hospital\\ListItem.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAkwD8AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T15:49:57.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "admin.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\admin.cs",
+              "RelativeDocumentMoniker": "Hospital\\admin.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\admin.cs",
+              "RelativeToolTip": "Hospital\\admin.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAzwDsAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T14:58:36.702Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -64,90 +127,63 @@
               "RelativeDocumentMoniker": "Hospital\\medicalHistory.cs",
               "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\medicalHistory.cs",
               "RelativeToolTip": "Hospital\\medicalHistory.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAcwDEAAABVAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwCsAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T18:16:33.328Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "medicalHistory.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\medicalHistory.cs",
-              "RelativeDocumentMoniker": "Hospital\\medicalHistory.cs",
-              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\medicalHistory.cs [Design]",
-              "RelativeToolTip": "Hospital\\medicalHistory.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T18:16:29.819Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "admin.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\admin.cs",
-              "RelativeDocumentMoniker": "Hospital\\admin.cs",
-              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\admin.cs",
-              "RelativeToolTip": "Hospital\\admin.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAowF0AAABVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T14:58:36.702Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "login.cs",
               "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\login.cs",
               "RelativeDocumentMoniker": "Hospital\\login.cs",
               "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\login.cs",
               "RelativeToolTip": "Hospital\\login.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAcwHAAAAAjAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAjwGgAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T14:34:35.746Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Doctorview.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Doctorview.cs",
-              "RelativeDocumentMoniker": "Hospital\\Doctorview.cs",
-              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Doctorview.cs",
-              "RelativeToolTip": "Hospital\\Doctorview.cs",
-              "ViewState": "AQIAAI8AAAAAAAAAAAAUwCUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T14:33:15.336Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Doctorview.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Doctorview.cs",
-              "RelativeDocumentMoniker": "Hospital\\Doctorview.cs",
-              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Doctorview.cs [Design]",
-              "RelativeToolTip": "Hospital\\Doctorview.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T14:18:42.283Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ListItem.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\ListItem.cs",
-              "RelativeDocumentMoniker": "Hospital\\ListItem.cs",
-              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\ListItem.cs",
-              "RelativeToolTip": "Hospital\\ListItem.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAkwD8AAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T15:11:07.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "MedicalHistoryForm.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\MedicalHistoryForm.cs",
+              "RelativeDocumentMoniker": "Hospital\\MedicalHistoryForm.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\MedicalHistoryForm.cs",
+              "RelativeToolTip": "Hospital\\MedicalHistoryForm.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAADwvzUAAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T14:35:42.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "report.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\report.cs",
+              "RelativeDocumentMoniker": "Hospital\\report.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\report.cs [Design]",
+              "RelativeToolTip": "Hospital\\report.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T10:53:53.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "report.cs",
+              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\report.cs",
+              "RelativeDocumentMoniker": "Hospital\\report.cs",
+              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\report.cs",
+              "RelativeToolTip": "Hospital\\report.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAYwFIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T11:13:25.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Doctorview.Designer.cs",
               "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Doctorview.Designer.cs",
               "RelativeDocumentMoniker": "Hospital\\Doctorview.Designer.cs",
@@ -156,44 +192,6 @@
               "ViewState": "AQIAALEAAAAAAAAAAAAYwMgAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T18:05:32.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "report.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\report.cs",
-              "RelativeDocumentMoniker": "Hospital\\report.cs",
-              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\report.cs",
-              "RelativeToolTip": "Hospital\\report.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA+wBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T11:13:25.708Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "report.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\report.cs",
-              "RelativeDocumentMoniker": "Hospital\\report.cs",
-              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\report.cs [Design]",
-              "RelativeToolTip": "Hospital\\report.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T10:53:53.708Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Form1.cs",
-              "RelativeDocumentMoniker": "Hospital\\Form1.cs",
-              "ToolTip": "C:\\Users\\Daniel Sameh\\source\\repos\\HospitalApp\\Hospital\\Form1.cs",
-              "RelativeToolTip": "Hospital\\Form1.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAQwDMAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T10:47:22.569Z",
               "EditorCaption": ""
             }
           ]

@@ -85,7 +85,7 @@ namespace Hospital
                     this.Close();
                     return ;
                 }
-
+                rdr3.Close();
                 
 
             }
@@ -107,15 +107,17 @@ namespace Hospital
                     var password = rdr5.GetString(8);
 
                     MessageBox.Show($"Welcome {rdr5.GetValue(2)} {rdr5.GetValue(3)}");
-                    //Patient p = new Patient(id, empid, fName, lName, DOB, gender, phone, email, password);
+                    Patient p = new Patient(id, empid, fName, lName, DOB, gender, phone, email, password);
                     this.Hide();
-                    //p.ShowDialog();
-                    //this.Close();
+                    p.ShowDialog();
+                    this.Close();
                     rdr5.Close();
                     return;
+
                 }
                 else
                 {
+                    rdr5.Close() ;
                     MessageBox.Show("Invalid Email or Password!");
 
                 }

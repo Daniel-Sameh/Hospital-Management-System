@@ -38,6 +38,8 @@ namespace Hospital
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             flowLayoutPanel1 = new FlowLayoutPanel();
             label1 = new Label();
             DoctorName = new Label();
@@ -53,17 +55,26 @@ namespace Hospital
             richTextBox1 = new RichTextBox();
             submitbutton = new Button();
             hidingpanel = new Panel();
+            panel1 = new Panel();
+            panel2 = new Panel();
+            dataGridView1 = new DataGridView();
+            label6 = new Label();
+            comboBox2 = new ComboBox();
+            button1 = new Button();
+            label7 = new Label();
+            panel3 = new Panel();
             ((ISupportInitialize)pictureBox1).BeginInit();
+            ((ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // flowLayoutPanel1
             // 
             flowLayoutPanel1.AutoScroll = true;
             flowLayoutPanel1.BackColor = Color.Maroon;
-            flowLayoutPanel1.Location = new Point(297, 0);
+            flowLayoutPanel1.Location = new Point(287, 99);
             flowLayoutPanel1.Margin = new Padding(3, 4, 3, 4);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
-            flowLayoutPanel1.Size = new Size(623, 630);
+            flowLayoutPanel1.Size = new Size(622, 481);
             flowLayoutPanel1.TabIndex = 0;
             flowLayoutPanel1.Paint += flowLayoutPanel1_Paint;
             // 
@@ -106,7 +117,7 @@ namespace Hospital
             logoutlinkLabel.AutoSize = true;
             logoutlinkLabel.Font = new Font("Segoe UI Emoji", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             logoutlinkLabel.LinkColor = Color.DarkRed;
-            logoutlinkLabel.Location = new Point(113, 599);
+            logoutlinkLabel.Location = new Point(95, 732);
             logoutlinkLabel.Name = "logoutlinkLabel";
             logoutlinkLabel.Size = new Size(62, 20);
             logoutlinkLabel.TabIndex = 0;
@@ -202,17 +213,122 @@ namespace Hospital
             // 
             // hidingpanel
             // 
-            hidingpanel.Location = new Point(0, 228);
+            hidingpanel.Location = new Point(0, 231);
             hidingpanel.Name = "hidingpanel";
-            hidingpanel.Size = new Size(297, 334);
+            hidingpanel.Size = new Size(281, 334);
             hidingpanel.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(0, 0, 64);
+            panel1.Location = new Point(-12, 96);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(931, 3);
+            panel1.TabIndex = 12;
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(0, 0, 64);
+            panel2.Location = new Point(287, 97);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(3, 680);
+            panel2.TabIndex = 13;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.AllowUserToAddRows = false;
+            dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.BackgroundColor = Color.Peru;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Window;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            dataGridView1.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.Location = new Point(290, 641);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Control;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(0, 0, 64);
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridView1.RowHeadersVisible = false;
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.Size = new Size(619, 133);
+            dataGridView1.TabIndex = 14;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(28, 587);
+            label6.Name = "label6";
+            label6.Size = new Size(236, 31);
+            label6.TabIndex = 15;
+            label6.Text = "Add Assisting Nurse:";
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(50, 641);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(181, 28);
+            comboBox2.TabIndex = 16;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Maroon;
+            button1.Font = new Font("Segoe UI", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.Transparent;
+            button1.Location = new Point(84, 675);
+            button1.Name = "button1";
+            button1.Size = new Size(91, 34);
+            button1.TabIndex = 17;
+            button1.Text = "Add";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.Peru;
+            label7.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label7.ForeColor = Color.AliceBlue;
+            label7.Location = new Point(296, 584);
+            label7.Name = "label7";
+            label7.Size = new Size(257, 41);
+            label7.TabIndex = 18;
+            label7.Text = "Assistant Nurses:";
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.Peru;
+            panel3.Location = new Point(290, 555);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(619, 169);
+            panel3.TabIndex = 19;
             // 
             // Doctorview
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.AliceBlue;
-            ClientSize = new Size(914, 628);
+            ClientSize = new Size(905, 774);
+            Controls.Add(label7);
+            Controls.Add(button1);
+            Controls.Add(comboBox2);
+            Controls.Add(label6);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(hidingpanel);
             Controls.Add(submitbutton);
             Controls.Add(richTextBox1);
@@ -228,11 +344,14 @@ namespace Hospital
             Controls.Add(label1);
             Controls.Add(flowLayoutPanel1);
             Controls.Add(pictureBox1);
+            Controls.Add(dataGridView1);
+            Controls.Add(panel3);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Doctorview";
             Text = "Doctorview";
             Load += Doctorview_Load;
             ((ISupportInitialize)pictureBox1).EndInit();
+            ((ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -254,5 +373,13 @@ namespace Hospital
         private RichTextBox richTextBox1;
         private Button submitbutton;
         private Panel hidingpanel;
+        private Panel panel1;
+        private Panel panel2;
+        private DataGridView dataGridView1;
+        private Label label6;
+        private ComboBox comboBox2;
+        private Button button1;
+        private Label label7;
+        private Panel panel3;
     }
 }

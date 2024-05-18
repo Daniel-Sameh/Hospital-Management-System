@@ -61,7 +61,6 @@ namespace Hospital
                 string name = (string)selectedRow["name"];
                 //Appointment To be implemented
                 appointmentForm a= new appointmentForm(patientID,name);
-                
                 a.ShowDialog();
             }
         }
@@ -227,11 +226,23 @@ namespace Hospital
             if (rowAffected > 0)
             {
                 MessageBox.Show("Patient Added Successfully");
+                firstnametextBox.Text= string.Empty;
+                lastnametextBox.Text= string.Empty;
+                textBoxEmail.Text= string.Empty;
+                textBoxPass.Text= string.Empty;
+                gendercomboBox.SelectedIndex = 0;
+                numericUpDownPhone.Value = 0;
+                numericUpDown2.Value = 0;
             }
             else
             {
                 MessageBox.Show("Failed to Add Patient!");
             }
+            if (panelOnlyDisplay.Height == 497)
+            {
+                elapsePanel();
+            }
+
         }
     }
 }

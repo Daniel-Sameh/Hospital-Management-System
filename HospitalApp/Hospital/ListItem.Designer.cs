@@ -57,7 +57,7 @@
             // 
             // makeprescriptionbutton
             // 
-            makeprescriptionbutton.BackColor = Color.LightSeaGreen;
+            makeprescriptionbutton.BackColor = Color.FromArgb(0, 0, 64);
             makeprescriptionbutton.Font = new Font("Segoe UI Symbol", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             makeprescriptionbutton.ForeColor = SystemColors.ButtonHighlight;
             makeprescriptionbutton.Location = new Point(370, 44);
@@ -71,7 +71,7 @@
             // 
             // mediaclbutton
             // 
-            mediaclbutton.BackColor = Color.LightSeaGreen;
+            mediaclbutton.BackColor = Color.FromArgb(0, 0, 64);
             mediaclbutton.Font = new Font("Segoe UI Symbol", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             mediaclbutton.ForeColor = SystemColors.ButtonHighlight;
             mediaclbutton.Location = new Point(221, 44);
@@ -108,7 +108,7 @@
             Controls.Add(Dateandtimelabel);
             Margin = new Padding(3, 4, 3, 4);
             Name = "ListItem";
-            Size = new Size(609, 140);
+            Size = new Size(600, 140);
             ResumeLayout(false);
             PerformLayout();
         }

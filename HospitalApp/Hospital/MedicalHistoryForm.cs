@@ -51,7 +51,7 @@ namespace Hospital
         {
             try
             {
-                using (SqlConnection con = new SqlConnection("Data Source=LAPTOP-VQSLFTD9;Initial Catalog=hospital;Integrated Security=True;TrustServerCertificate=True"))
+                using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=True;TrustServerCertificate=True"))
                 {
                     con.Open();
                     // Exclude mId from the INSERT statement

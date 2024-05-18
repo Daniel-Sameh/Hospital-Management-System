@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             pictureBox1 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
@@ -36,8 +37,11 @@
             label5 = new Label();
             label6 = new Label();
             dataGridView1 = new DataGridView();
+            label7 = new Label();
+            dataGridViewSpeciality = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSpeciality).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -45,7 +49,7 @@
             pictureBox1.Image = Properties.Resources.report__1_;
             pictureBox1.Location = new Point(12, 22);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(109, 109);
+            pictureBox1.Size = new Size(109, 74);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -53,40 +57,40 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.Location = new Point(115, 53);
+            label1.Font = new Font("Century Gothic", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(115, 22);
             label1.Name = "label1";
-            label1.Size = new Size(399, 54);
+            label1.Size = new Size(417, 49);
             label1.TabIndex = 1;
             label1.Text = "Heal Hospital Report";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(22, 168);
+            label2.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(22, 121);
             label2.Name = "label2";
-            label2.Size = new Size(231, 29);
+            label2.Size = new Size(223, 27);
             label2.TabIndex = 2;
             label2.Text = "- Hospital Income: ";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(22, 211);
+            label3.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold);
+            label3.Location = new Point(22, 162);
             label3.Name = "label3";
-            label3.Size = new Size(331, 29);
+            label3.Size = new Size(320, 27);
             label3.TabIndex = 3;
             label3.Text = "- Number of Appointments: ";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(22, 253);
+            label4.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold);
+            label4.Location = new Point(22, 200);
             label4.Name = "label4";
-            label4.Size = new Size(399, 29);
+            label4.Size = new Size(387, 27);
             label4.TabIndex = 4;
             label4.Text = "- Appointments in the last month: ";
             // 
@@ -94,7 +98,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(120, 107);
+            label5.Location = new Point(127, 71);
             label5.Name = "label5";
             label5.Size = new Size(62, 25);
             label5.TabIndex = 5;
@@ -103,10 +107,10 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Microsoft Sans Serif", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(135, 320);
+            label6.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold);
+            label6.Location = new Point(140, 520);
             label6.Name = "label6";
-            label6.Size = new Size(310, 29);
+            label6.Size = new Size(291, 27);
             label6.TabIndex = 6;
             label6.Text = "Top 10 most paid doctors";
             // 
@@ -120,21 +124,76 @@
             dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
             dataGridView1.BackgroundColor = Color.LightSteelBlue;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Enabled = false;
-            dataGridView1.Location = new Point(22, 367);
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.Location = new Point(12, 550);
             dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(546, 350);
+            dataGridView1.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.RowTemplate.ReadOnly = true;
+            dataGridView1.Size = new Size(556, 232);
             dataGridView1.TabIndex = 7;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Century Gothic", 13.8F, FontStyle.Bold);
+            label7.Location = new Point(115, 264);
+            label7.Name = "label7";
+            label7.Size = new Size(340, 27);
+            label7.TabIndex = 8;
+            label7.Text = "Frequent Hospital Specialities";
+            // 
+            // dataGridViewSpeciality
+            // 
+            dataGridViewSpeciality.AllowUserToAddRows = false;
+            dataGridViewSpeciality.AllowUserToDeleteRows = false;
+            dataGridViewSpeciality.AllowUserToResizeColumns = false;
+            dataGridViewSpeciality.AllowUserToResizeRows = false;
+            dataGridViewSpeciality.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridViewSpeciality.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewSpeciality.BackgroundColor = Color.LightSteelBlue;
+            dataGridViewSpeciality.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewSpeciality.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dataGridViewSpeciality.EnableHeadersVisualStyles = false;
+            dataGridViewSpeciality.GridColor = SystemColors.HotTrack;
+            dataGridViewSpeciality.ImeMode = ImeMode.NoControl;
+            dataGridViewSpeciality.Location = new Point(12, 303);
+            dataGridViewSpeciality.MultiSelect = false;
+            dataGridViewSpeciality.Name = "dataGridViewSpeciality";
+            dataGridViewSpeciality.ReadOnly = true;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.LightGray;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridViewSpeciality.RowHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewSpeciality.RowHeadersVisible = false;
+            dataGridViewSpeciality.RowHeadersWidth = 51;
+            dataGridViewSpeciality.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewSpeciality.RowTemplate.ReadOnly = true;
+            dataGridViewSpeciality.RowTemplate.Resizable = DataGridViewTriState.True;
+            dataGridViewSpeciality.SelectionMode = DataGridViewSelectionMode.CellSelect;
+            dataGridViewSpeciality.ShowCellErrors = false;
+            dataGridViewSpeciality.ShowCellToolTips = false;
+            dataGridViewSpeciality.ShowEditingIcon = false;
+            dataGridViewSpeciality.ShowRowErrors = false;
+            dataGridViewSpeciality.Size = new Size(556, 194);
+            dataGridViewSpeciality.TabIndex = 9;
             // 
             // report
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.AliceBlue;
-            ClientSize = new Size(590, 729);
+            ClientSize = new Size(590, 553);
+            Controls.Add(dataGridViewSpeciality);
+            Controls.Add(label7);
             Controls.Add(dataGridView1);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -148,6 +207,7 @@
             Load += report_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewSpeciality).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -162,5 +222,7 @@
         private Label label5;
         private Label label6;
         private DataGridView dataGridView1;
+        private Label label7;
+        private DataGridView dataGridViewSpeciality;
     }
 }

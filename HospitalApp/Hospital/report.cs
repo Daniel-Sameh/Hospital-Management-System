@@ -50,7 +50,7 @@ namespace Hospital
             }
             rdr2.Close();
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            query = "select top 10 e.empFirstName+' '+e.empLastName as name, d.speciality, e.salary, e.empPhone as phone\r\nfrom doctor as d join Employee as e on d.eId=e.eId\r\norder by e.salary;";
+            query = "select top 10 e.empFirstName+' '+e.empLastName as name, d.speciality, e.salary, e.empPhone as phone from doctor as d join Employee as e on d.eId=e.eId order by e.salary;";
             SqlCommand cmd3 = new SqlCommand(query, con);
             SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
             DataTable dataTable = new DataTable();
@@ -61,10 +61,25 @@ namespace Hospital
             dataGridView1.AutoResizeColumns();
             dataGridView1.AutoResizeRows();
             //dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            foreach (DataGridViewRow row in dataGridView1.Rows)
+            /*foreach (DataGridViewRow row in dataGridView1.Rows)
             {
                 row.Height = 135;
-            }
+            }*/
+            query = "select Speciality, count(*) as [Number of Appointments] from doctor as d join appointment as a on d.eId=a.eId group by speciality order by count(*) desc;";
+            SqlConnection con1 = new SqlConnection(connection);
+            SqlCommand cmd4= new SqlCommand(query,con1);
+            SqlDataAdapter adapter1 = new SqlDataAdapter(query, connection);
+            DataTable dataTable1 = new DataTable();
+            adapter1.Fill(dataTable1);
+            dataGridViewSpeciality.DataSource = dataTable1;
+            dataGridViewSpeciality.AutoResizeColumns();
+            dataGridViewSpeciality.AutoResizeRows();
+            dataGridViewSpeciality.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            /*foreach (DataGridViewRow row in dataGridViewSpeciality.Rows)
+            {
+                row.DividerHeight= 10;
+            }*/
+
 
         }
     }

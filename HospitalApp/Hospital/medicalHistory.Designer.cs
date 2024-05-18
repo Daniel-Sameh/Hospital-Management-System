@@ -40,7 +40,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("MS Reference Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(120, 28);
+            label1.Location = new Point(182, 28);
             label1.Name = "label1";
             label1.Size = new Size(281, 38);
             label1.TabIndex = 0;
@@ -49,7 +49,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.copy;
-            pictureBox1.Location = new Point(42, 9);
+            pictureBox1.Location = new Point(104, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(82, 73);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -60,13 +60,24 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.AllowUserToResizeColumns = false;
             dataGridView1.BackgroundColor = Color.LightSalmon;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.EnableHeadersVisualStyles = false;
+            dataGridView1.ImeMode = ImeMode.Off;
             dataGridView1.Location = new Point(26, 107);
+            dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.ReadOnly = true;
+            dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(434, 367);
+            dataGridView1.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dataGridView1.ShowCellErrors = false;
+            dataGridView1.ShowCellToolTips = false;
+            dataGridView1.ShowEditingIcon = false;
+            dataGridView1.Size = new Size(561, 367);
+            dataGridView1.StandardTab = true;
             dataGridView1.TabIndex = 2;
             // 
             // medicalHistory
@@ -75,7 +86,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.Maroon;
-            ClientSize = new Size(488, 511);
+            ClientSize = new Size(611, 511);
             Controls.Add(dataGridView1);
             Controls.Add(pictureBox1);
             Controls.Add(label1);

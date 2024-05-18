@@ -80,11 +80,11 @@
             // adminName
             // 
             adminName.AutoSize = true;
-            adminName.Font = new Font("Simplified Arabic Fixed", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            adminName.Font = new Font("Century Schoolbook", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             adminName.ForeColor = Color.AliceBlue;
-            adminName.Location = new Point(250, 69);
+            adminName.Location = new Point(254, 69);
             adminName.Name = "adminName";
-            adminName.Size = new Size(72, 28);
+            adminName.Size = new Size(63, 27);
             adminName.TabIndex = 1;
             adminName.Text = "Null";
             adminName.UseWaitCursor = true;
@@ -355,8 +355,10 @@
             dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
             dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             dataGridView1.ColumnHeadersHeight = 29;
+            dataGridView1.EnableHeadersVisualStyles = false;
             dataGridView1.Location = new Point(-3, 154);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
             dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = Color.Firebrick;
             dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F);
@@ -365,7 +367,9 @@
             dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
             dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView1.RowHeadersVisible = false;
             dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.RowTemplate.DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dataGridView1.Size = new Size(933, 297);
             dataGridView1.TabIndex = 3;
             // 
