@@ -1,5 +1,4 @@
 # Hospital-Management-System
-Hospital Management System using Microsoft SQL Server for Database and C# for the GUI Windows Form Application
 ## Overview
 This Hospital Management System is a desktop application built using C# WinForms with Microsoft SQL Server as the database backend. It is designed to manage the operations of a hospital, including user management, patient management, appointment scheduling, and medical history tracking. The system ensures that administrative tasks are handled efficiently, providing a seamless experience for admins, doctors, nurses, and patients.
 ## Features
@@ -21,7 +20,9 @@ This Hospital Management System is a desktop application built using C# WinForms
 ## Getting Started
 ### Installation
 1. Clone the repository:
-   :git clone https://github.com/Daniel-Sameh/Hospital-Management-System cd Hospital-Management-System:
+  ```sh
+  git clone https://github.com/Daniel-Sameh/Hospital-Management-System
+  ```
 2. Set up the Database:
    - Ensure you have `Microsoft SQL Server` installed and running.
    - Open `Hospital.sql` file in the server.
