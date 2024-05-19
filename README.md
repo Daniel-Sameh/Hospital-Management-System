@@ -34,13 +34,13 @@ This Hospital Management System is a desktop application built using C# WinForms
 4. Build and Run the Application:
   - Build the solution in Visual Studio.
   - Run the application.
-### Usage
+## Usage
 Upon launching the application, you will be greeted with the main interface, where you can navigate to different sections of the system:
   - Sign up a new user.
   - Login and enter your profile.
   - Manage your account and other users accounts according to your role (admin, doctor, nurse, patient).
   - Generate Report that has some statistics about the hospital.
-### Media
+## Media
 ![image](https://github.com/Daniel-Sameh/Hospital-Management-System/blob/main/Media/mainInterface.png)
 
 ![image](https://github.com/Daniel-Sameh/Hospital-Management-System/blob/main/Media/login.png)
