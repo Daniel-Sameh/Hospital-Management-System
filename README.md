@@ -27,10 +27,10 @@ This Hospital Management System is a desktop application built using C# WinForms
    - Ensure you have `Microsoft SQL Server` installed and running.
    - Open `Hospital.sql` file in the server.
    - Execute the SQL script to create the necessary tables and relationships.
-3. Configure the Connection String:
+3. Configure the Connection Strings:
    - Open the project in Visual Studio.
-   - Locate the C# file where the connection string is defined (e.g., admin.cs).
-   - Update the connection string to point to your SQL Server instance and database.
+   - Locate the C# files where the connection strings are defined (e.g., admin.cs).
+   - Update the connection strings to point to your SQL Server instance and database.
 4. Build and Run the Application:
   - Build the solution in Visual Studio.
   - Run the application.
