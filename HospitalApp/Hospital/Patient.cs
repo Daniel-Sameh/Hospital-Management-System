@@ -37,6 +37,7 @@ namespace Hospital
             bok = false;
             calcBill();
             DataGrid.CellClick += new DataGridViewCellEventHandler(this.DataGrid_CellClick);
+            this.Text = patient_name + " Profile";
 
         }
         private void calcBill()

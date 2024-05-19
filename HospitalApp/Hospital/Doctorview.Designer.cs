@@ -348,7 +348,7 @@ namespace Hospital
             Controls.Add(panel3);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Doctorview";
-            Text = "Doctorview";
+            Text = "Doctor Profile";
             Load += Doctorview_Load;
             ((ISupportInitialize)pictureBox1).EndInit();
             ((ISupportInitialize)dataGridView1).EndInit();

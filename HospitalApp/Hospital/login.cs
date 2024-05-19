@@ -97,7 +97,7 @@ namespace Hospital
                 if (rdr5.Read())
                 {
                     var id = rdr5.GetDecimal(0);
-                    var empid = rdr5.GetDecimal(1);
+                    var empid = !rdr5.IsDBNull(1)?rdr5.GetDecimal(1):0;
                     var fName = rdr5.GetString(2);
                     var lName = rdr5.GetString(3);
                     var DOB = rdr5.GetDateTime(4);

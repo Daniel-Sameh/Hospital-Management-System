@@ -66,46 +66,48 @@ namespace Hospital
                 //Appointment To be implemented
                 appointmentForm a= new appointmentForm(patientID,name);
                 a.ShowDialog();
-            }else if(e.ColumnIndex == dataGridView1.Columns["Update"].Index && e.RowIndex >= 0)
+            }else if(dataGridView1.Columns.Contains("Update"))
             {
-                DataRow selectedRow = ((DataRowView)dataGridView1.Rows[e.RowIndex].DataBoundItem).Row;
-                int patientID = Convert.ToInt32(selectedRow["pId"]);
-                string query = $"select * from patient where pId={patientID};";
-                string connectionString = "Data Source =DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=true";
-                SqlConnection con = new SqlConnection(connectionString);
-                con.Open();
-                SqlCommand cmd = new SqlCommand(query, con);
-                SqlDataReader rdr = cmd.ExecuteReader();
-                if (rdr.Read())
+                if (e.ColumnIndex == dataGridView1.Columns["Update"].Index && e.RowIndex >= 0)
                 {
-                    firstnametextBox.Text = rdr.GetString(2);
-                    lastnametextBox.Text = rdr.GetString(3);
-                    textBoxEmail.Text = rdr.GetString(7);
-                    textBoxPass.Text = rdr.GetString(8);
-                    //gendercomboBox.Text =
-                    numericUpDownPhone.Value = rdr.GetDecimal(6);
-                    string g = rdr.GetString(5);
-                    if (g == "Male")
+                    DataRow selectedRow = ((DataRowView)dataGridView1.Rows[e.RowIndex].DataBoundItem).Row;
+                    int patientID = Convert.ToInt32(selectedRow["pId"]);
+                    string query = $"select * from patient where pId={patientID};";
+                    string connectionString = "Data Source =DESKTOP-P4RUM8H;Initial Catalog=hospital;Integrated Security=true";
+                    SqlConnection con = new SqlConnection(connectionString);
+                    con.Open();
+                    SqlCommand cmd = new SqlCommand(query, con);
+                    SqlDataReader rdr = cmd.ExecuteReader();
+                    if (rdr.Read())
                     {
-                        gendercomboBox.SelectedIndex = 0;
+                        firstnametextBox.Text = rdr.GetString(2);
+                        lastnametextBox.Text = rdr.GetString(3);
+                        textBoxEmail.Text = rdr.GetString(7);
+                        textBoxPass.Text = rdr.GetString(8);
+                        //gendercomboBox.Text =
+                        numericUpDownPhone.Value = rdr.GetDecimal(6);
+                        string g = rdr.GetString(5);
+                        if (g == "Male")
+                        {
+                            gendercomboBox.SelectedIndex = 0;
+                        }
+                        else
+                        {
+                            gendercomboBox.SelectedIndex = 1;
+                        }
                     }
-                    else
-                    {
-                        gendercomboBox.SelectedIndex = 1;
-                    }
+                    rdr.Close();
+                    numericUpDown2.Value = patientID;
+                    elapsePanel();
+                    update = true;
+                    gendercomboBox.Enabled = false;
+                    firstnametextBox.ReadOnly = true;
+                    lastnametextBox.ReadOnly = true;
+                    firstnametextBox.Enabled = false;
+                    lastnametextBox.Enabled = false;
+                    numericUpDown2.Enabled = false;
+
                 }
-                rdr.Close();
-                numericUpDown2.Value = patientID;
-                elapsePanel();
-                update = true;
-                gendercomboBox.Enabled = false;
-                firstnametextBox.ReadOnly = true;
-                lastnametextBox.ReadOnly = true;
-                firstnametextBox.Enabled = false;
-                lastnametextBox.Enabled = false;
-                numericUpDown2.Enabled=false;
-
-
 
 
             }

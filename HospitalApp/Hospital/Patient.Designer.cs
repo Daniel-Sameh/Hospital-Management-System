@@ -356,7 +356,7 @@
             Controls.Add(listView1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Patient";
-            Text = "Form2";
+            Text = "Patient Profile";
             Load += Patient_Load;
             ((System.ComponentModel.ISupportInitialize)DataGrid).EndInit();
             panel1.ResumeLayout(false);
