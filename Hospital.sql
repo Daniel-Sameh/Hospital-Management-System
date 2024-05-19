@@ -1,3 +1,4 @@
+create database hospital;
 use hospital;
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2017                    */
@@ -515,3 +516,56 @@ alter table Prescription
       references Doctor (eId)
 go
 
+ALTER TABLE Patient
+DROP CONSTRAINT FK_PATIENT_ADDS_ADMIN;
+
+ALTER TABLE Patient
+ALTER COLUMN eId numeric(5,0) NULL;
+
+ALTER TABLE Patient
+ADD CONSTRAINT FK_PATIENT_ADDS_ADMIN FOREIGN KEY (eId) 
+REFERENCES�Employee(eId);
+
+-- Step 1: Add a new identity column
+ALTER TABLE appointment
+ADD aId numeric(5,0) IDENTITY(1,1)
+
+alter table appointment
+drop constraint PK_APPOINTMENT
+
+/*SET IDENTITY_INSERT appointment ON
+-- Step 2: Copy data from old primary key column to new identity column
+UPDATE appointment
+SET aId = apId
+
+SET IDENTITY_INSERT appointment OFF
+*/
+ALTER TABLE appointment
+ADD CONSTRAINT PK_appointment_aId PRIMARY KEY (aId)
+
+ALTER TABLE appointment
+drop column apId
+
+ALTER TABLE Prescription
+DROP CONSTRAINT PK_PRESCRIPTION;
+
+alter TABLE Prescription
+DROP column presId;
+
+ALTER TABLE Prescription
+add presId INT IDENTITY(1,1);
+
+ALTER TABLE Prescription
+ADD CONSTRAINT PK_PRESCRIPTION PRIMARY KEY (presId);
+
+ALTER TABLE MedicalRecord
+DROP CONSTRAINT PK_MEDICALRECORD;
+
+alter TABLE MedicalRecord
+DROP column mId;
+
+ALTER TABLE MedicalRecord
+add mId INT IDENTITY(1,1);
+
+ALTER TABLE MedicalRecord
+ADD CONSTRAINT  PK_MEDICALRECORD PRIMARY KEY (mId);
