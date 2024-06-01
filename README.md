@@ -45,6 +45,10 @@ Upon launching the application, you will be greeted with the main interface, whe
 
 ![image](https://github.com/Daniel-Sameh/Hospital-Management-System/blob/main/Media/login.png)
 
+![image](https://github.com/Daniel-Sameh/Hospital-Management-System/blob/main/Media/signup.png)
+
+![image](https://github.com/Daniel-Sameh/Hospital-Management-System/blob/main/Media/signup1.png)
+
 ![image](https://github.com/Daniel-Sameh/Hospital-Management-System/blob/main/Media/admin.png)
 
 ![image](https://github.com/Daniel-Sameh/Hospital-Management-System/blob/main/Media/admin1.png)
